@@ -31,7 +31,7 @@ while True:
         if second == "0":
             result = "除数不能为0"
         else:
-            result + num1 % num2
+            result = num1 % num2
     else:
         result = "不支持的运算符"
 
