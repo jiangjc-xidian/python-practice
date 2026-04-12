@@ -1,9 +1,12 @@
-# 带循环的计算器
+# 带循环的计算器（含计数功能）
+
+count = 0   # 记录次数
 
 while True:
     # 获取第一个数字，检查是否要退出
     first = input("请输入第一个数字（或输入quit退出):")
     if first == "quit":
+        print("你共计算了",count,"次")   # 退出时显示次数
         print("再见!")
         break
 
@@ -37,4 +40,7 @@ while True:
 
     print("结果是:",result)
     print() # 打印一个空行，让界面更清爽
+
+
+    count = count + 1   # 每次计算完，次数加1
              
